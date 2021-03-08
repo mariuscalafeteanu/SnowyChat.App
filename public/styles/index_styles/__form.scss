@@ -1,0 +1,71 @@
+.form-wrapper {
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        background-color: $form-bg;
+        border: .2rem solid $form-border;
+        height: 30rem;
+        width: 40rem;
+        font-family: 'Roboto', sans-serif;
+        h1 {
+            color: white;
+            letter-spacing: .5rem;
+        }
+        .inputs {
+            color: $input-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: .1rem;
+            font-weight: 300;
+            .code-input, .name-input {
+                background-color: $input-bg;
+                color: white;
+                outline: none;
+                border: .2rem solid $input-border;
+                height: 3rem;
+                width: 20rem;
+                margin-top: 1rem;
+                margin-left: 1rem;
+                letter-spacing: .1rem;
+                text-align: center;
+                transition: .2s;
+                &:hover {
+                    background-color: $input-bg-hover;
+                    border: .2rem solid $input-border-hover;
+                }
+                &:focus {
+                    background-color: $input-bg-focus;
+                }
+            }
+        }
+        .form-buttons {
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            .join-room, .create-room {
+                cursor: pointer;
+                background-color: $btn-bg;
+                outline: none;
+                border: .2rem solid $btn-border;
+                color: $btn-color;
+                padding: 1rem;
+                font-weight: 300;
+                font-size: 1rem;
+                transition: .3s;
+                &:hover {
+                    color: $btn-color-hover;
+                    border: .2rem solid $btn-border-hover;
+                }
+            }
+        }
+    }
+}

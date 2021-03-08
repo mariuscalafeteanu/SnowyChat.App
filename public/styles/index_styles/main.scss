@@ -1,3 +1,6 @@
+//variables
+@import '../_variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +11,9 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    // z-index: -1;
-    background-color: rgb(34, 34, 34);
+    z-index: -1;
+    background-color: $bg;
 }
+
+//imports
+@import './_form';

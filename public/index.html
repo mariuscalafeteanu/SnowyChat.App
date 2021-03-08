@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index_styles/main.css">
     <title>SnowyChat.App</title>
 </head>
 <body>
     <div id="bg"></div>
+    <div class="form-wrapper">
+        <form action="chat.html">
+            <h1>Snowy Chat</h1>
+            <div class="inputs">
+                <p>Name <input type="text" minlength="3" name="name" placeholder="Please enter your name." class="name-input"></p>
+                <p>Code <input type="text" minlenght="5" name="room" placeholder="Enter the code to join/create a room." class="code-input"></p>
+            </div>
+            <div class="form-buttons">
+                <input type="submit" value="Join room" class="join-room" onclick="checkFields()">
+                <input type="submit" value="Create room." class="create-room" onclick="checkFields()">
+            </div>
+        </form>
+    </div>
     <!-- <script src="/socket.io/socket.io.js"></script> -->
     <script src="./particles/particles.js"></script>
     <script src="./scripts/main.js"></script>

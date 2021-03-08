@@ -11,7 +11,6 @@ const io = socketIo(server);
 //static folder
 app.use(express.static('public'));
 
-
 // Socket.IO
 io.on('connection', socket => {
     // .....

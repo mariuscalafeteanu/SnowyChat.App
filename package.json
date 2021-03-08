@@ -1,0 +1,28 @@
+{
+  "name": "snowychat.app",
+  "version": "1.0.0",
+  "description": "This is a chat app with a snow/christmas theme.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariuscalafeteanu/SnowyChat.App.git"
+  },
+  "author": "Calafeteanu Marius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariuscalafeteanu/SnowyChat.App/issues"
+  },
+  "homepage": "https://github.com/mariuscalafeteanu/SnowyChat.App#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.1.2"
+  }
+}

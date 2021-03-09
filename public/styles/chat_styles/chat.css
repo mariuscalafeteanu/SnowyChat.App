@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: #222222;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #303030;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.chat-wrapper {
+  height: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chat-wrapper .chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(36, 36, 36, 0.9);
+  border: 0.2rem solid #292929;
+  height: 50rem;
+  width: 80rem;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+.chat-wrapper .chat .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(36, 36, 36, 0.9);
+  border-bottom: 0.2rem solid #292929;
+  height: 4rem;
+  width: 100%;
+  top: 0;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  color: white;
+}
+
+.chat-wrapper .chat .header h3 {
+  letter-spacing: .2rem;
+  margin-left: 1rem;
+}
+
+.chat-wrapper .chat .header .code-div {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.chat-wrapper .chat .header .code-output {
+  font-weight: 300;
+  letter-spacing: .2rem;
+}
+
+.chat-wrapper .chat .output {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.chat-wrapper .chat .output .message {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.chat-wrapper .chat .output .message p {
+  font-weight: 300;
+  color: white;
+  margin-top: 1rem;
+}
+
+.chat-wrapper .chat .output .message span {
+  color: grey;
+}
+
+.chat-wrapper .chat .user-board {
+  background-color: #202020;
+  width: 100%;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: 0;
+  position: relative;
+  border-top: 0.2rem solid #292929;
+}
+
+.chat-wrapper .chat .user-board .message-board .name-input {
+  background-color: #222222;
+  color: white;
+  outline: none;
+  border: 0.2rem solid rgba(39, 39, 39, 0.5);
+  height: 3rem;
+  width: 20rem;
+  margin-left: 1rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.chat-wrapper .chat .user-board .message-board .name-input:hover {
+  background-color: #1b1b1b;
+  border: 0.2rem solid white;
+}
+
+.chat-wrapper .chat .user-board .message-board .name-input:focus {
+  background-color: #1b1b1b;
+}
+
+.chat-wrapper .chat .user-board .message-board .send-message {
+  cursor: pointer;
+  background-color: #222222;
+  outline: none;
+  border: 0.2rem solid #2c2c2c;
+  color: rgba(75, 75, 75, 0.5);
+  padding: 1rem;
+  font-weight: 300;
+  font-size: .9rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-left: 1rem;
+}
+
+.chat-wrapper .chat .user-board .message-board .send-message:hover {
+  color: white;
+  border: 0.2rem solid white;
+}
+
+.chat-wrapper .chat .user-board .leave-room {
+  cursor: pointer;
+  background-color: #222222;
+  outline: none;
+  border: 0.2rem solid #2c2c2c;
+  color: rgba(75, 75, 75, 0.5);
+  padding: 1rem;
+  font-weight: 300;
+  font-size: .9rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-right: 2rem;
+}
+
+.chat-wrapper .chat .user-board .leave-room:hover {
+  color: white;
+  border: 0.2rem solid white;
+}
+/*# sourceMappingURL=chat.css.map */

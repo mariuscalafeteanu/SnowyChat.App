@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index_styles/main.css">
+    <link rel="stylesheet" href="./styles/chat_styles/chat.css">
     <title>SnowyChat.App</title>
 </head>
 <body>
     <div id="bg"></div>
-    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <div class="chat-wrapper">
+        <div class="chat">
+            <div class="header">
+                <h3>Private room</h3>
+                <div class="code-div">Code: <span class="code-output"></span></div>
+            </div>
+            <div class="output">
+                <div class="message">
+                    <p>Name: <span>message.....</span></p>
+                </div>
+            </div>
+            <div class="user-board">
+                <div class="message-board">
+                    <input type="text" minlength="3" name="name" placeholder="Enter your message and click send." class="name-input">
+                    <button class="send-message">Send message.</button>
+                </div>
+                <button class="leave-room">Leave room.</button>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="./particles/particles.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/chat.js"></script>
 </body>
 </html>

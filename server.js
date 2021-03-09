@@ -13,7 +13,11 @@ app.use(express.static('public'));
 
 // Socket.IO
 io.on('connection', socket => {
-    // .....
+
+    //creating and joining room
+    // socket.on('create-room', room => {
+    //     socket.join(room);
+    // })
 });
 
 

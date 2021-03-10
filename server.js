@@ -14,12 +14,23 @@ app.use(express.static('public'));
 // Socket.IO
 io.on('connection', socket => {
 
-    //creating and joining room
-    // socket.on('create-room', room => {
-    //     socket.join(room);
-    // })
-});
+    //joining room
+    socket.on('join-room', room => {
+        socket.join(room);
+        console.log(`A user joined ${room}`);
+    });
 
+    //leaving room
+    socket.on('leave-room', room => {
+        socket.leave(room);
+        console.log(`A user left ${room}`);
+    })
+
+    //sending message
+    socket.on('message', (message, room, user) => {
+        io.to(room).emit('send-message', message, user);
+    })
+});
 
 //listening
 const port = 5000 || procces.env.port;

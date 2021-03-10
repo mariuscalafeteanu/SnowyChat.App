@@ -25,7 +25,7 @@
             align-items: center;
             letter-spacing: .1rem;
             font-weight: 300;
-            .code-input, .name-input {
+            .name-input {
                 background-color: $input-bg;
                 color: white;
                 outline: none;
@@ -37,6 +37,27 @@
                 letter-spacing: .1rem;
                 text-align: center;
                 transition: .2s;
+                &:hover {
+                    background-color: $input-bg-hover;
+                    border: .2rem solid $input-border-hover;
+                }
+                &:focus {
+                    background-color: $input-bg-focus;
+                }
+            }
+            .rooms {
+                background-color: $input-bg;
+                color: white;
+                outline: none;
+                border: .2rem solid $input-border;
+                height: 3rem;
+                width: 20rem;
+                margin-top: 1rem;
+                margin-left: 1rem;
+                letter-spacing: .1rem;
+                text-align: center;
+                transition: .2s;
+                
                 &:hover {
                     background-color: $input-bg-hover;
                     border: .2rem solid $input-border-hover;

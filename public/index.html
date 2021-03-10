@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index_styles/main.css">
+    <link rel="stylesheet" href="./styles/main/main.css">
     <title>SnowyChat.App</title>
 </head>
 <body>
@@ -16,15 +16,19 @@
             <h1>Snowy Chat</h1>
             <div class="inputs">
                 <p>Name <input type="text" minlength="3" name="name" placeholder="Please enter your name." class="name-input"></p>
-                <p>Code <input type="text" minlenght="5" name="room" placeholder="Enter the code to join/create a room." class="code-input"></p>
+                <p>Room
+                    <select class="rooms" name="room">
+                        <option value="global1">Global Room #1</option>
+                        <option value="global2">Global Room #2</option>
+                        <option value="global3">Global Room #3</option>
+                      </select>
+                </p>
             </div>
             <div class="form-buttons">
                 <input type="submit" value="Join room" class="join-room">
-                <input type="submit" value="Create room." class="create-room">
             </div>
         </form>
     </div>
-    <script src="/socket.io/socket.io.js"></script>
     <script src="./particles/particles.js"></script>
     <script src="./scripts/main.js"></script>
 </body>

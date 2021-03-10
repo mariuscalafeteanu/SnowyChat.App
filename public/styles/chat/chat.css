@@ -141,7 +141,7 @@
   border-top: 0.2rem solid #292929;
 }
 
-.chat-wrapper .chat .user-board .message-board .name-input {
+.chat-wrapper .chat .user-board .message-board .message-input {
   background-color: #222222;
   color: white;
   outline: none;
@@ -155,12 +155,12 @@
   transition: .2s;
 }
 
-.chat-wrapper .chat .user-board .message-board .name-input:hover {
+.chat-wrapper .chat .user-board .message-board .message-input:hover {
   background-color: #1b1b1b;
   border: 0.2rem solid white;
 }
 
-.chat-wrapper .chat .user-board .message-board .name-input:focus {
+.chat-wrapper .chat .user-board .message-board .message-input:focus {
   background-color: #1b1b1b;
 }
 

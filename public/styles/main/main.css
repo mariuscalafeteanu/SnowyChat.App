@@ -71,7 +71,7 @@
   font-weight: 300;
 }
 
-.form-wrapper form .inputs .code-input, .form-wrapper form .inputs .name-input {
+.form-wrapper form .inputs .name-input {
   background-color: #222222;
   color: white;
   outline: none;
@@ -86,12 +86,36 @@
   transition: .2s;
 }
 
-.form-wrapper form .inputs .code-input:hover, .form-wrapper form .inputs .name-input:hover {
+.form-wrapper form .inputs .name-input:hover {
   background-color: #1b1b1b;
   border: 0.2rem solid white;
 }
 
-.form-wrapper form .inputs .code-input:focus, .form-wrapper form .inputs .name-input:focus {
+.form-wrapper form .inputs .name-input:focus {
+  background-color: #1b1b1b;
+}
+
+.form-wrapper form .inputs .rooms {
+  background-color: #222222;
+  color: white;
+  outline: none;
+  border: 0.2rem solid rgba(39, 39, 39, 0.5);
+  height: 3rem;
+  width: 20rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.form-wrapper form .inputs .rooms:hover {
+  background-color: #1b1b1b;
+  border: 0.2rem solid white;
+}
+
+.form-wrapper form .inputs .rooms:focus {
   background-color: #1b1b1b;
 }
 

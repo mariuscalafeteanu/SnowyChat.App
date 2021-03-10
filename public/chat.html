@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/chat_styles/chat.css">
+    <link rel="stylesheet" href="./styles/chat/chat.css">
     <title>SnowyChat.App</title>
 </head>
 <body>
@@ -12,20 +12,16 @@
     <div class="chat-wrapper">
         <div class="chat">
             <div class="header">
-                <h3>Private room</h3>
-                <div class="code-div">Code: <span class="code-output"></span></div>
+                <h3 class="code-output"></h3>
             </div>
             <div class="output">
-                <div class="message">
-                    <p>Name: <span>message.....</span></p>
-                </div>
             </div>
             <div class="user-board">
                 <div class="message-board">
-                    <input type="text" minlength="3" name="name" placeholder="Enter your message and click send." class="name-input">
-                    <button class="send-message">Send message.</button>
+                    <input type="text" minlength="3" name="name" placeholder="Enter your message and click send." class="message-input">
+                    <button class="send-message">Send message</button>
                 </div>
-                <button class="leave-room">Leave room.</button>
+                <button class="leave-room">Leave room</button>
             </div>
         </div>
     </div>

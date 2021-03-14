@@ -20,10 +20,20 @@ io.on('connection', socket => {
         console.log(`A user joined ${room}`);
     });
 
+    //welcome user
+    socket.on('user-joined', data => {
+        io.emit('welcome-message', data);
+    })
+
     //leaving room
     socket.on('leave-room', room => {
         socket.leave(room);
         console.log(`A user left ${room}`);
+    })
+
+    //leave room message
+    socket.on('user-left', data => {
+        io.emit('leave-message', data);
     })
 
     //sending message

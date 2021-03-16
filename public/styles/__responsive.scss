@@ -1,0 +1,111 @@
+// index responsiveness
+
+@media only screen and (max-width: 733px) {
+    .form-wrapper {
+        margin-left: 2em;
+        margin-right: 2em;
+        height: 40em;
+        form {
+            width: 40em;
+            height: 30em;
+            margin-left: 2em;
+            margin-right: 2em;
+            border: .2em solid $form-border;
+            h1 {
+                letter-spacing: .2em;
+                text-align: center;
+            }
+            .inputs {
+                text-align: center;
+                letter-spacing: .1em;
+                p {
+                    margin-top: 1em;
+                }
+                .name-input {
+                    height: 3em;
+                    width: 20em;
+                    margin-top: 1em;
+                    margin-right: 1em;
+                    border: .2em solid $form-name-input-border;
+                    letter-spacing: .1em;
+                    &:hover {
+                        border: .2em solid $form-name-input-border-hover;
+                    }
+                }
+                .rooms {
+                    height: 3em;
+                    width: 20em;
+                    margin-top: 1em;
+                    margin-right: 1em;
+                    letter-spacing: .1em;
+                    &:hover {
+                        border: .2em solid $room-border-hover;
+                    }
+                }
+            }
+            .form-buttons {
+                .join-room, .create-room {
+                    border: .2em solid $form-btn-border;
+                    padding: 1em;
+                    font-size: 1em;
+                    &:hover {
+                        border: .2em solid $form-btn-border-hover;
+                    }
+                }
+            }
+       }
+    }
+}
+
+//chat responsiveness
+@media only screen and (max-width: 733px) {
+    .chat-wrapper {
+        height: 40em;
+        margin-left: 2em;
+        margin-right: 2em;
+        .chat {
+            width: 92vw;
+            height: 30em;
+            border: .2em solid $chat-border;
+            .header {
+                border-bottom: .2em solid $chat-header-border;
+                height: 4em;
+            }
+            .user-board {
+                height: 7em;
+                border-top: .2em solid $user-board-border;
+                font-size: .9em;
+                .message-board {
+                    margin-top: 1em;
+                    display: flex;
+                    justify-content: center;
+                    .message-input {
+                        width: 11em;
+                        border: .2em solid $message-input-border;
+                        margin-left: .5em;
+                        letter-spacing: .1em;
+                        &:hover {
+                            border: .2em solid $message-input-border-hover;
+                        }
+                    }
+                    .send-message {
+                        margin-bottom: 1em;
+                        border: .2em solid $send-message-border;
+                        padding: 1em;
+                        font-size: .9em;
+                        margin-left: .5em;
+                        &:hover {
+                            border: .2em solid $send-message-border-hover;
+                        }
+                    }
+                }
+                .leave-room {
+                    border: .2em solid $leave-room-border;
+                    padding: 1em;
+                    font-size: .9em;
+                    margin-left: .5em;
+                }
+            }
+        }
+    }
+}

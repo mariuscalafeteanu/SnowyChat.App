@@ -147,4 +147,115 @@
   color: white;
   border: 0.2rem solid white;
 }
+
+@media only screen and (max-width: 733px) {
+  .form-wrapper {
+    margin-left: 2em;
+    margin-right: 2em;
+    height: 40em;
+  }
+  .form-wrapper form {
+    width: 40em;
+    height: 30em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border: 0.2em solid #292929;
+  }
+  .form-wrapper form h1 {
+    letter-spacing: .2em;
+    text-align: center;
+  }
+  .form-wrapper form .inputs {
+    text-align: center;
+    letter-spacing: .1em;
+  }
+  .form-wrapper form .inputs p {
+    margin-top: 1em;
+  }
+  .form-wrapper form .inputs .name-input {
+    height: 3em;
+    width: 20em;
+    margin-top: 1em;
+    margin-right: 1em;
+    border: 0.2em solid rgba(39, 39, 39, 0.5);
+    letter-spacing: .1em;
+  }
+  .form-wrapper form .inputs .name-input:hover {
+    border: 0.2em solid white;
+  }
+  .form-wrapper form .inputs .rooms {
+    height: 3em;
+    width: 20em;
+    margin-top: 1em;
+    margin-right: 1em;
+    letter-spacing: .1em;
+  }
+  .form-wrapper form .inputs .rooms:hover {
+    border: 0.2em solid white;
+  }
+  .form-wrapper form .form-buttons .join-room, .form-wrapper form .form-buttons .create-room {
+    border: 0.2em solid #2c2c2c;
+    padding: 1em;
+    font-size: 1em;
+  }
+  .form-wrapper form .form-buttons .join-room:hover, .form-wrapper form .form-buttons .create-room:hover {
+    border: 0.2em solid white;
+  }
+}
+
+@media only screen and (max-width: 733px) {
+  .chat-wrapper {
+    height: 40em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .chat-wrapper .chat {
+    width: 92vw;
+    height: 30em;
+    border: 0.2em solid #292929;
+  }
+  .chat-wrapper .chat .header {
+    border-bottom: 0.2em solid #292929;
+    height: 4em;
+  }
+  .chat-wrapper .chat .user-board {
+    height: 7em;
+    border-top: 0.2em solid #292929;
+    font-size: .9em;
+  }
+  .chat-wrapper .chat .user-board .message-board {
+    margin-top: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .chat-wrapper .chat .user-board .message-board .message-input {
+    width: 11em;
+    border: 0.2em solid rgba(39, 39, 39, 0.5);
+    margin-left: .5em;
+    letter-spacing: .1em;
+  }
+  .chat-wrapper .chat .user-board .message-board .message-input:hover {
+    border: 0.2em solid white;
+  }
+  .chat-wrapper .chat .user-board .message-board .send-message {
+    margin-bottom: 1em;
+    border: 0.2em solid #2c2c2c;
+    padding: 1em;
+    font-size: .9em;
+    margin-left: .5em;
+  }
+  .chat-wrapper .chat .user-board .message-board .send-message:hover {
+    border: 0.2em solid white;
+  }
+  .chat-wrapper .chat .user-board .leave-room {
+    border: 0.2em solid #2c2c2c;
+    padding: 1em;
+    font-size: .9em;
+    margin-left: .5em;
+  }
+}
 /*# sourceMappingURL=main.css.map */

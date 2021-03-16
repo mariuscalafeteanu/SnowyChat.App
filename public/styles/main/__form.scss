@@ -14,11 +14,11 @@
         width: 40rem;
         font-family: 'Roboto', sans-serif;
         h1 {
-            color: white;
+            color: $form-heading-color;
             letter-spacing: .5rem;
         }
         .inputs {
-            color: $input-color;
+            color: $form-input-color;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -26,10 +26,10 @@
             letter-spacing: .1rem;
             font-weight: 300;
             .name-input {
-                background-color: $input-bg;
+                background-color: $form-name-input-bg;
                 color: white;
                 outline: none;
-                border: .2rem solid $input-border;
+                border: .2rem solid $form-name-input-border;
                 height: 3rem;
                 width: 20rem;
                 margin-top: 1rem;
@@ -38,18 +38,18 @@
                 text-align: center;
                 transition: .2s;
                 &:hover {
-                    background-color: $input-bg-hover;
-                    border: .2rem solid $input-border-hover;
+                    background-color: $form-name-input-bg-hover;
+                    border: .2rem solid $form-name-input-border-hover;
                 }
                 &:focus {
-                    background-color: $input-bg-focus;
+                    background-color: $form-name-input-bg-focus;
                 }
             }
             .rooms {
-                background-color: $input-bg;
+                background-color: $room-bg;
                 color: white;
                 outline: none;
-                border: .2rem solid $input-border;
+                border: .2rem solid $room-border;
                 height: 3rem;
                 width: 20rem;
                 margin-top: 1rem;
@@ -59,11 +59,11 @@
                 transition: .2s;
                 
                 &:hover {
-                    background-color: $input-bg-hover;
-                    border: .2rem solid $input-border-hover;
+                    background-color: $room-bg-hover;
+                    border: .2rem solid $room-border-hover;
                 }
                 &:focus {
-                    background-color: $input-bg-focus;
+                    background-color: $room-bg-focus;
                 }
             }
         }
@@ -74,17 +74,17 @@
             width: 100%;
             .join-room, .create-room {
                 cursor: pointer;
-                background-color: $btn-bg;
+                background-color: $form-btn-bg;
                 outline: none;
-                border: .2rem solid $btn-border;
-                color: $btn-color;
+                border: .2rem solid $form-btn-border;
+                color: $form-btn-color;
                 padding: 1rem;
                 font-weight: 300;
                 font-size: 1rem;
                 transition: .3s;
                 &:hover {
-                    color: $btn-color-hover;
-                    border: .2rem solid $btn-border-hover;
+                    color: $form-btn-color-hover;
+                    border: .2rem solid $form-btn-border-hover;
                 }
             }
         }

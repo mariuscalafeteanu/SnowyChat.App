@@ -15,25 +15,25 @@ app.use(express.static('public'));
 io.on('connection', socket => {
 
     //joining room
-    socket.on('join-room', room => {
+    socket.on('join-room', (room, user) => {
         socket.join(room);
-        console.log(`A user joined ${room}`);
+        console.log(`${user} joined ${room}`);
     });
 
     //welcome user
-    socket.on('user-joined', data => {
-        io.emit('welcome-message', data);
+    socket.on('user-joined', (message, room) => {
+        socket.broadcast.to(room).emit('welcome-message', message);
     })
 
     //leaving room
     socket.on('leave-room', room => {
         socket.leave(room);
-        console.log(`A user left ${room}`);
     })
 
     //leave room message
-    socket.on('user-left', data => {
-        io.emit('leave-message', data);
+    socket.on('user-left', (message, room, user) => {
+        socket.broadcast.to(room).emit('leave-message', message);
+        console.log(`${user} left ${room}`);
     })
 
     //sending message

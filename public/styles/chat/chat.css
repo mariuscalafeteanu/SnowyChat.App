@@ -91,12 +91,7 @@
   margin-left: 1rem;
 }
 
-.chat-wrapper .chat .header .code-div {
-  margin-right: 1rem;
-  font-weight: 600;
-}
-
-.chat-wrapper .chat .header .code-output {
+.chat-wrapper .chat .header .room-name-output {
   font-weight: 300;
   letter-spacing: .2rem;
 }
@@ -120,7 +115,7 @@
 }
 
 .chat-wrapper .chat .output .message span {
-  color: grey;
+  color: #7e7e7e;
 }
 
 .chat-wrapper .chat .user-board {

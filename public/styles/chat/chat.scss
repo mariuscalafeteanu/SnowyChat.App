@@ -22,17 +22,17 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: rgb(31, 31, 31); 
+    background: $chat-scrollbar-track; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(48, 48, 48); 
+    background: $chat-scrollbar-thumb; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: $chat-scrollbar-thumb-hover; 
   }
 
 //scrollbar 
@@ -47,8 +47,8 @@
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        background-color: $form-bg;
-        border: .2rem solid $form-border;
+        background-color: $chat-bg;
+        border: .2rem solid $chat-border;
         height: 50rem;
         width: 80rem;
         font-family: 'Roboto', sans-serif;
@@ -57,48 +57,43 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: $form-bg;
-            border-bottom: .2rem solid $form-border;
+            background-color: $chat-header-bg;
+            border-bottom: .2rem solid $chat-header-border;
             height: 4rem;
             width: 100%;
             top: 0;
             font-family: 'Roboto', sans-serif;
             position: relative;
-            color: white;
+            color: $chat-header-color;
             h3 {
                 letter-spacing: .2rem;
                 margin-left: 1rem;
             }
-            .code-div {
-                margin-right: 1rem;
-                font-weight: 600;
-            }
-            .code-output {
+            .room-name-output {
                 font-weight: 300;
                 letter-spacing: .2rem;
             }
         }
         .output {
-            background-color: transparent;
+            background-color: $chat-output-bg;
             width: 100%;
             height: 100%;
             overflow-y: scroll;
-            // position: absolute;
             .message {
                 margin-left: 2rem;
                 margin-top: 2rem;
                 p {
                     font-weight: 300;
-                    color: white;
+                    color: $message-p;
                     margin-top: 1rem;
                 }
                 span {
-                    color: grey;
+                    color: $message-span;
                 }
             }
         }
         .user-board {
-            background-color: rgb(32, 32, 32);
+            background-color: $user-board-bg;
             width: 100%;
             height: 7rem;
             display: flex;
@@ -106,13 +101,13 @@
             justify-content: space-between;
             bottom: 0;
             position: relative;
-            border-top: .2rem solid $form-border;
+            border-top: .2rem solid $user-board-border;
             .message-board {
                 .message-input {
-                    background-color: $input-bg;
+                    background-color: $message-input-bg;
                             color: white;
                             outline: none;
-                            border: .2rem solid $input-border;
+                            border: .2rem solid $message-input-border;
                             height: 3rem;
                             width: 20rem;
                             margin-left: 1rem;
@@ -120,44 +115,44 @@
                             text-align: center;
                             transition: .2s;
                             &:hover {
-                                background-color: $input-bg-hover;
-                                border: .2rem solid $input-border-hover;
+                                background-color: $message-input-bg-hover;
+                                border: .2rem solid $message-input-border-hover;
                             }
                             &:focus {
-                                background-color: $input-bg-focus;
+                                background-color: $message-input-bg-focus;
                             }
                         }
                 .send-message {
                     cursor: pointer;
-                    background-color: $btn-bg;
+                    background-color: $send-message-bg;
                     outline: none;
-                    border: .2rem solid $btn-border;
-                    color: $btn-color;
+                    border: .2rem solid $send-message-border;
+                    color: $send-message-color;
                     padding: 1rem;
                     font-weight: 300;
                     font-size: .9rem;
                     transition: .3s;
                     margin-left: 1rem;
                     &:hover {
-                        color: $btn-color-hover;
-                        border: .2rem solid $btn-border-hover;
+                        color: $send-message-color-hover;
+                        border: .2rem solid $send-message-border-hover;
                     }
                 }
             }
             .leave-room {
                 cursor: pointer;
-                background-color: $btn-bg;
+                background-color: $leave-room-bg;
                 outline: none;
-                border: .2rem solid $btn-border;
-                color: $btn-color;
+                border: .2rem solid $leave-room-border;
+                color: $leave-room-color;
                 padding: 1rem;
                 font-weight: 300;
                 font-size: .9rem;
                 transition: .3s;
                 margin-right: 2rem;
                 &:hover {
-                    color: $btn-color-hover;
-                    border: .2rem solid $btn-border-hover;
+                    color: $leave-room-color-hover;
+                    border: .2rem solid $leave-room-border-hover;
                 }
             }
         }

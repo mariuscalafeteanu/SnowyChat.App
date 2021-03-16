@@ -8,7 +8,8 @@ const socket = io();
 const output = document.querySelector('.output');
 
 //variables
-const roomTitle = document.querySelector('.code-output');
+const roomTitle = document.querySelector('.room-name-output');
+const messageInput = document.querySelector('.message-input')
 const sendMessageBtn = document.querySelector('.send-message');
 const leaveRoomBtn = document.querySelector('.leave-room');
 
@@ -24,7 +25,7 @@ socket.on('connect', () => {
     `<div class="message">
         <p>${userName} <span>joined this room. (${roomName})</span></p>
     </div>`
-    socket.emit('user-joined', msg);
+    socket.emit('user-joined', msg, roomName);
 });
 
 socket.on('welcome-message', data => {
@@ -34,7 +35,7 @@ socket.on('welcome-message', data => {
 
 //joining and leaving room
 const joinRoom = () => {
-    socket.emit('join-room', roomName);
+    socket.emit('join-room', roomName, userName);
     roomTitle.innerText = roomName;
 }
 
@@ -45,9 +46,8 @@ const leaveRoom = () => {
         <p>${userName}: <span>left this room. (${roomName})</span></p>
     </div>`;
 
-    socket.emit('user-left', msg);
-
-    socket.emit('leave-room', roomName);
+    socket.emit('user-left', msg, roomName, userName);
+    socket.emit('leave-room', roomName, userName);
     window.location.replace('/');
 }
 
@@ -62,7 +62,6 @@ leaveRoomBtn.addEventListener('click', leaveRoom);
 
 //sending message
 const sendMessage = () => {
-    const messageInput = document.querySelector('.message-input')
     const message = messageInput.value; 
 
     if (messageInput.value === '') {

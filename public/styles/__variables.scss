@@ -1,5 +1,4 @@
-//------  INDEX ----------//
-
+//------  INDEX FORM ----------//
 
 //backgrounds
 $bg: rgb(34, 34, 34);
@@ -8,26 +7,95 @@ $bg: rgb(34, 34, 34);
 $form-bg: rgba(36, 36, 36, .9);
 $form-border: rgb(41, 41, 41);
 
+//h1 color
+$form-heading-color: white;
+
 
 //form input
-$input-color: rgba(97, 97, 97, 0.5);
+$form-input-color: rgba(97, 97, 97, 0.5);
 $input-bg: rgb(34, 34, 34);
 $input-border: rgba(39, 39, 39, .5);
-    //form input hover
-    $input-border-hover: white;
-    $input-bg-hover: rgb(27, 27, 27);
-    $input-bg-focus: rgb(27, 27, 27);
+
+//name input
+$form-name-input-bg: rgb(34, 34, 34);
+$form-name-input-border: rgba(39, 39, 39, .5);
+
+//form name input hover
+$form-name-input-border-hover: white;
+$form-name-input-bg-hover: rgb(27, 27, 27);
+$form-name-input-bg-focus: rgb(27, 27, 27);
+
+
+//form rooms
+$room-bg: rgb(34, 34, 34);
+$room-border: rgba(39, 39, 39, .5);
+
+//form rooms hover/focus
+$room-border-hover: white;
+$room-bg-hover: rgb(27, 27, 27);
+$room-bg-focus: rgb(27, 27, 27);
 
 
 //form-buttons
-$btn-border: rgb(44, 44, 44);
-$btn-bg: rgb(34, 34, 34);
-$btn-color: rgba(75, 75, 75, 0.5);
-    //form-buttons hover
-    $btn-color-hover: white;
-    $btn-border-hover: white;
+$form-btn-border: rgb(44, 44, 44);
+$form-btn-bg: rgb(34, 34, 34);
+$form-btn-color: rgba(75, 75, 75, 0.5);
+
+//form-buttons hover
+$form-btn-color-hover: white;
+$form-btn-border-hover: white;
 
 
 
 //------  CHAT ----------//
 
+//scrollbar
+$chat-scrollbar-track: rgb(31, 31, 31);
+$chat-scrollbar-thumb: rgb(48, 48, 48);
+$chat-scrollbar-thumb-hover: #555;
+
+//chat box
+$chat-bg: rgba(36, 36, 36, .9);
+$chat-border: rgb(41, 41, 41);
+
+//chat header
+$chat-header-bg: rgba(36, 36, 36, .9);
+$chat-header-border: rgb(41, 41, 41);
+$chat-header-color: white;
+
+//chat output and message
+$chat-output-bg: transparent;
+
+$message-p: white;
+$message-span: rgb(126, 126, 126);
+
+//user board
+$user-board-bg: rgb(32, 32, 32);
+$user-board-border: rgb(41, 41, 41);
+
+//message-input
+$message-input-bg: rgb(34, 34, 34);
+$message-input-border: rgba(39, 39, 39, .5);
+
+//message-input hover/focus
+$message-input-border-hover: white;
+$message-input-bg-hover: rgb(27, 27, 27);
+$message-input-bg-focus: rgb(27, 27, 27);
+
+//send message
+$send-message-bg: rgb(34, 34, 34);
+$send-message-border: rgb(44, 44, 44);
+$send-message-color: rgba(75, 75, 75, 0.5);
+
+//send message hover/focus
+$send-message-color-hover: white;
+$send-message-border-hover: white;
+
+//leave rooom
+$leave-room-border: rgb(44, 44, 44);
+$leave-room-bg: rgb(34, 34, 34);
+$leave-room-color: rgba(75, 75, 75, 0.5);
+
+//leave-room hover
+$leave-room-color-hover: white;
+$leave-room-border-hover: white;

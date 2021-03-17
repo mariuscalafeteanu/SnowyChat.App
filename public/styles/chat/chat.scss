@@ -78,6 +78,7 @@
             background-color: $chat-output-bg;
             width: 100%;
             height: 100%;
+            position: relative;
             overflow-y: scroll;
             .message {
                 margin-left: 2rem;
@@ -86,6 +87,7 @@
                     font-weight: 300;
                     color: $message-p;
                     margin-top: 1rem;
+                    margin-bottom: 1rem;
                 }
                 span {
                     color: $message-span;

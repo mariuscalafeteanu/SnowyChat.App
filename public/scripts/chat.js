@@ -71,14 +71,26 @@ const sendMessage = () => {
         socket.emit('message', message, roomName, userName);
         messageInput.value = '';
     }
+
 }
 
 sendMessageBtn.addEventListener('click', sendMessage);
 
 
+//sending the message on keydown "enter"
+messageInput.addEventListener('keydown', e => {
+    if (e.keyCode==13) {
+        sendMessage();
+    }
+})
+
 socket.on('send-message', (message, user) => {
     output.innerHTML += 
     `<div class="message">
         <p>${user}: <span>${message}</span></p>
-    </div>`
+    </div>`;
+
+    //scrolling at the newest message on each "send"
+    output.scrollTop = output.scrollHeight;
+
 });

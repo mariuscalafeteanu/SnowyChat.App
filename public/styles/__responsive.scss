@@ -4,7 +4,7 @@
     .form-wrapper {
         margin-left: 2em;
         margin-right: 2em;
-        height: 40em;
+        height: 35em;
         form {
             width: 40em;
             height: 30em;
@@ -59,51 +59,76 @@
 
 //chat responsiveness
 @media only screen and (max-width: 733px) {
+    // .chat-wrapper {
+    //     display: none;
+    // }
     .chat-wrapper {
-        height: 40em;
-        margin-left: 2em;
-        margin-right: 2em;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .chat {
-            width: 92vw;
-            height: 30em;
-            border: .2em solid $chat-border;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            background-color: $chat-bg;
+            border-bottom: .2em solid $chat-border;
+            height: 100%;
+            width: 100vw;
+            font-family: 'Roboto', sans-serif;
+            position: relative;
             .header {
-                border-bottom: .2em solid $chat-header-border;
-                height: 4em;
+                height: 3em;
+                width: 100%;
+                h3 {
+                    margin-left: 1em;
+                }
+            }
+            .output {
+                width: 100%;
+                height: 90vh;
+                border: none;
+                .message {
+                    margin-left: 2em;
+                    margin-top: 2em;
+                    font-size: .9em;
+                    p {
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                    }
+                }
             }
             .user-board {
-                height: 7em;
+                width: 100%;
+                bottom: 0;
+                position: fixed;
                 border-top: .2em solid $user-board-border;
-                font-size: .9em;
+                display: flex;
                 .message-board {
                     margin-top: 1em;
-                    display: flex;
-                    justify-content: center;
                     .message-input {
-                        width: 11em;
+                        height: 4.75em;
+                        width: 14em;
+                        margin-left: 1em;
                         border: .2em solid $message-input-border;
-                        margin-left: .5em;
-                        letter-spacing: .1em;
                         &:hover {
                             border: .2em solid $message-input-border-hover;
                         }
                     }
                     .send-message {
-                        margin-bottom: 1em;
-                        border: .2em solid $send-message-border;
-                        padding: 1em;
-                        font-size: .9em;
+                        font-size: .8em;
+                        padding: 1.9em;
                         margin-left: .5em;
+                        border: .2em solid $send-message-border;
                         &:hover {
                             border: .2em solid $send-message-border-hover;
                         }
                     }
                 }
                 .leave-room {
-                    border: .2em solid $leave-room-border;
-                    padding: 1em;
-                    font-size: .9em;
-                    margin-left: .5em;
+                    display: none;
                 }
             }
         }
